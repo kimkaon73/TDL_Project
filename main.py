@@ -5,10 +5,11 @@ from Check_Work import check_work
 
 while(True):
     print("************")
+    print("0. 프로그램 종료")
     print("1. 일정 확인")
     print("2. 일정 추가")
     print("3. 일정 제거")
-    print("************\n")   
+    print("************\n") 
     user_answer = input("원하는 동작을 입력하세요 : ")
     if user_answer == "1":
         check_work.check_work ()
@@ -18,6 +19,8 @@ while(True):
         break
     elif user_answer == "3":
         del_schedule.del_work()
+        break
+    elif user_answer == "0":
         break
     else:
         print("잘못된 입력입니다, 정확한 값을 입력해주세요\n")
