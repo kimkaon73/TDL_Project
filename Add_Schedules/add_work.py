@@ -17,7 +17,7 @@ def check_day(): # json파일 내의 날짜 여부 체크 후 생성 or pass
             print("잘못된 양식을 입력했습니다.\n")
     work_input = input("원하는 일정을 입력하세요 : ")
 
-    with open("storage.json", "r") as f: # json 파일을 불러옴
+    with open("./storage.json", "r") as f: # json 파일을 불러옴
         json_data = json.load(f) # json_data에 storage.json의 내용 저장
 
     in_json = False # json에 날이 저장되어있는지 확인 기본은 False(없음)

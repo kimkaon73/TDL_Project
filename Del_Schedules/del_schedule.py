@@ -11,7 +11,7 @@ def del_work(): # json파일 내의 날짜 여부 체크 후 생성 or pass
         else:
             print("잘못된 양식을 입력했습니다.")
         
-    with open("storage.json", "r") as f: # json 파일을 불러옴
+    with open("./storage.json", "r") as f: # json 파일을 불러옴
         json_data = json.load(f) # json_data에 storage.json의 내용 저장
 
     in_json = False # json에 날이 저장되어있는지 확인 기본은 False(없음)

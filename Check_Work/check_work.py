@@ -1,7 +1,7 @@
 # 특정 날짜의 작업 일정 출력, 없다면 "작업이 존재하지 않습니다" 출력
 import json
 def check_work():
-    with open("storage.json", "r") as f: # json 파일을 불러옴
+    with open("./storage.json", "r") as f: # json 파일을 불러옴
         json_data = json.load(f) # json_data에 storage.json의 내용 저장
 
     # 현재 할일의 개수를 파악하기 위해 json 파일에서 key의 개수를 확인
