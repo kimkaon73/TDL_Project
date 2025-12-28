@@ -37,7 +37,7 @@ def check_day(): # json파일 내의 날짜 여부 체크 후 생성 or pass
         json.dump(json_data, f)
     
     json_data[day_input].append(work_input) # 생성 or 원래 존재하던 날짜에 할 일을 작성
-
+    
     print(f"\n------------------------\n일정이 추가되었습니다.\n")
     print("현재 일정 : ")
     for i in json_data[day_input]:
