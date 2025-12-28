@@ -2,6 +2,8 @@
 from Del_Schedules import del_schedule
 from Add_Schedules import add_work
 from Check_Work import check_work
+import time
+
 
 while(True):
     print("************")
@@ -13,13 +15,13 @@ while(True):
     user_answer = input("원하는 동작을 입력하세요 : ")
     if user_answer == "1":
         check_work.check_work ()
-        break
+        time.sleep(2)
     elif user_answer =="2":
         add_work.check_day()
-        break
+        time.sleep(2)
     elif user_answer == "3":
         del_schedule.del_work()
-        break
+        time.sleep(2)
     elif user_answer == "0":
         break
     else:
